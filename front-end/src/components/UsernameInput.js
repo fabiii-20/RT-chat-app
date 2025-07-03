@@ -11,16 +11,20 @@ export default function UsernameInput({ onSubmit }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="username-form">
-      <h2>Enter your username</h2>
-      <input
-        type="text"
-        placeholder="Your name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        required
-      />
-      <button type="submit">Join Chat</button>
-    </form>
+    <div className="username-container">
+      <form onSubmit={handleSubmit} className="username-form">
+        <h2>Enter your username :</h2>
+        <div className="username-input-row">
+          <input
+            type="text"
+            placeholder="Your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+          <button type="submit">Join Chat</button>
+        </div>
+      </form>
+    </div>
   );
 }

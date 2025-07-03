@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { connectToWebSocket } from "./utils/socket";
 import UsernameInput from "./components/UsernameInput";
 import ChatWindow from "./components/ChatWindow";
@@ -31,14 +31,15 @@ function App() {
   };
 
   return (
-    <div className="chat-container">
+    <div className="chat-app">
       {!username ? (
         <UsernameInput onSubmit={setUsername} />
       ) : (
-        <>
-          <ChatWindow messages={messages} />
+        <div className="chat-box">
+          <header className="chat-header">Logged in as: <strong>{username}</strong></header>
+          <ChatWindow messages={messages} username={username} />
           <MessageInput onSend={sendMessage} />
-        </>
+        </div>
       )}
     </div>
   );
