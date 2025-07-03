@@ -1,6 +1,3 @@
-Perfect! Here's your finalized, short `README.md` for your GitHub repo with the deployed frontend link included:
-
----
 
 ````markdown
 # Real-Time Chat App (MERN Stack)
