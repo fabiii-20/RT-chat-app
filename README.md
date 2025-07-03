@@ -6,7 +6,7 @@ A real-time chat application built with the MERN stack and WebSocket (`ws` modul
 
 ---
 
-## 🔧 Local Setup
+##  Local Setup
 
 ### Backend
 
@@ -48,7 +48,7 @@ npm start
 
 ---
 
-## 🧠 Architecture
+##  Architecture
 
 * **Frontend**: React SPA using WebSocket to communicate with the backend.
 * **Backend**: Express.js with `ws` for real-time communication and MongoDB for storing messages.
@@ -57,7 +57,7 @@ npm start
 
 ---
 
-## 🌐 Deployment
+##  Deployment
 
    **Frontend (Vercel)**: [https://rt-chat-app-pzov.vercel.app/](https://rt-chat-app-pzov.vercel.app/)
    **Backend**: Deployed on Render (wss://rt-chat-app-33m0.onrender.com)
